@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>EnvironmentVariables</key>
+        <dict>
+            <key>PATH</key>
+            <string>{{user-path}}</string>
+        </dict>
+        <key>Label</key>
+        <string>uk.co.mdsec.dockerproxy</string>
+        <key>ProgramArguments</key>
+        <array>
+            <string>{{docker-machine}}</string>
+            <string>start</string>
+            <string>default</string>
+        </array>
+        <key>RunAtLoad</key>
+        <true/>
+    </dict>
+</plist>
